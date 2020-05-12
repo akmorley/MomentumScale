@@ -24,17 +24,17 @@ include(${ROOT_USE_FILE})
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-ROOT_GENERATE_DICTIONARY(G__FitMomentumScale RooTwoSidedCBShape.h LINKDEF LinkDef.h OPTIONS -p)
+ROOT_GENERATE_DICTIONARY(G__FitMomentumScale RooTwoSidedCBShape.h LINKDEF include/LinkDef.h OPTIONS -p)
 ROOT_GENERATE_ROOTMAP( FitMomentumScaleDict LINKDEF RooTwoSidedCBShape.h  DEPENDENCIES )
 #ROOT_LINKER_LIBRARY( FitMomentumScaleDict G__FitMomentumScale.cxx RooTwoSidedCBShape.cxx  HelperClasses.cxx LIBRARIES RIO Core RooFit RooFitCore MathCore)
 
 
 #---Create a shared library with geneated dictionary
-add_library(FitMomentumScale SHARED G__FitMomentumScale.cxx RooTwoSidedCBShape.cxx  HelperClasses.cxx )
+add_library(FitMomentumScale SHARED G__FitMomentumScale.cxx src/RooTwoSidedCBShape.cxx  src/HelperClasses.cxx )
 target_link_libraries(FitMomentumScale ${ROOT_LIBRARIES})
 
 
 #---Create  a main program using the library
-add_executable(performFit TestFit.C)
+add_executable(performFit src/TestFit.C)
 target_link_libraries(performFit FitMomentumScale)
 
