@@ -1,8 +1,8 @@
-#MomentumScale decomposition
+#MomentumScale 
 
 This package is able to decompose the momentum scale biases in a global scale $`\varepsilon_{s}`$ and a residual Z $`\varepsilon_{dz}`$ (or alternatively radial) scale based on the following equations:
 
-``` math
+```math
 {m'}_{\mu\mu}^2/m_{\mu\mu}^2 - 1\approx &+ 2 A^{+}_s \varepsilon_{s}(\eta^+,\phi^+) + 2 A^{-}_s \varepsilon_{s}(\eta^-,\phi^-) \\ 
 		&+ 2 A^{+}_z \varepsilon_{dz}(\eta^+,\phi^+) 	+ 2 A^{-}_z \varepsilon_{dz}(\eta^-,\phi^-) \\ 
 ```
