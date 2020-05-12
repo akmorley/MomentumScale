@@ -13,3 +13,6 @@ And the parameters are constrained such that:
 $` E^+E^-\left( \pmb{\beta}^+ - \pmb{\beta}^- \right)^2 =  m^2_{\mu\mu}  - m^2_\mu \left(E^+ + E^- \right)^2/E^+E^-  `$  
 and that 
 $` E^+E^-\left( \left( \beta^+\right)^2 - \pmb{\beta}^+ \cdot \pmb{\beta}^- \right) =  m^2_{\mu\mu}/2 - m_{\mu}^2 (1+E^{-}/E^{+})  `$
+
+
+The python file MC_Mass.py  fills the histograms which are then fitted using TestFit.C some manual intervention is needed at the moment to ensure the binning assumed in both is the same
