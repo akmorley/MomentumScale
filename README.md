@@ -3,8 +3,7 @@
 This package is able to decompose the momentum scale biases in a global scale $`\varepsilon_{s}`$ and a residual Z $`\varepsilon_{dz}`$ (or alternatively radial) scale based on the following equations:
 
 ```math
-{m'}_{\mu\mu}^2/m_{\mu\mu}^2 - 1\approx &+ 2 A^{+}_s \varepsilon_{s}(\eta^+,\phi^+) + 2 A^{-}_s \varepsilon_{s}(\eta^-,\phi^-) \\ 
-		&+ 2 A^{+}_z \varepsilon_{dz}(\eta^+,\phi^+) 	+ 2 A^{-}_z \varepsilon_{dz}(\eta^-,\phi^-) \\ 
+{m'}_{\mu\mu}^2/m_{\mu\mu}^2 - 1\approx + 2 A^{+}_s \varepsilon_{s}(\eta^+,\phi^+) + 2 A^{-}_s \varepsilon_{s}(\eta^-,\phi^-) + 2 A^{+}_z \varepsilon_{dz}(\eta^+,\phi^+) 	+ 2 A^{-}_z \varepsilon_{dz}(\eta^-,\phi^-) \\ 
 ```
 
 where $`A^{\pm}_s =  E^{\pm}E^{\mp}\left( \pmb{\beta}^{\pm} - \pmb{\beta}^{\mp} \right )^2 /m_{\mu\mu}^2 `$
